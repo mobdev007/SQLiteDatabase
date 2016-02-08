@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="223dp"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/name"
+        android:layout_weight="0.02" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editName"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.02"
+        android:text="uname" />
+
+    <TextView
+        android:layout_width="297dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Gender"
+        android:id="@+id/sex"
+        android:layout_weight="0.02" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/radio">
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:id="@+id/male"
+        android:layout_weight="0.02"
+        android:checked="false" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Female"
+        android:id="@+id/female"
+        android:layout_weight="0.02"
+        android:checked="false" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="339dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Phone"
+        android:id="@+id/phone" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phone_no"
+        android:ems="10"
+        android:inputType="phone"
+        android:text="+910000000000" />
+
+    <TextView
+        android:layout_width="339dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Salary"
+        android:id="@+id/salary"
+        android:layout_weight="0.02" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editsalary"
+        android:ems="10"
+        android:inputType="number"
+        android:text="00000" />
+
+    <TextView
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Language"
+        android:id="@+id/language"
+        android:layout_weight="0.02" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="English"
+        android:id="@+id/english"
+        android:layout_weight="0.02"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hindi"
+        android:id="@+id/hindi"
+        android:layout_weight="0.02"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telegu"
+        android:id="@+id/telegu"
+        android:layout_weight="0.02"
+        android:checked="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Submit"
+        android:id="@+id/submit_button"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.02" />
+
+</LinearLayout>
