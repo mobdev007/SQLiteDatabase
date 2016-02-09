@@ -34,7 +34,7 @@ public class SQLDataActivity extends Activity implements View.OnClickListener {
 
         Cursor cursor = dbHelper.getAllRows();
 
-        cursor.moveToFirst();
+        cursor.moveToLast();
         String sname = cursor.getString(1);
         String ssal = cursor.getString(3);
         String sphn = cursor.getString(4);
@@ -42,7 +42,10 @@ public class SQLDataActivity extends Activity implements View.OnClickListener {
         gen.setText(cursor.getString(2));
         salary.setText(ssal);
         phone_no.setText(sphn);
-        language.setText(cursor.getString(5));
+
+        if (cursor.getString(5).matches("true")){
+            language.setText("telugu");
+        }
 
         dbHelper.close();
 

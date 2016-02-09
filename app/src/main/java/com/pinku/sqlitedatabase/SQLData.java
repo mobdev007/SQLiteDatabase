@@ -48,9 +48,16 @@ protected void onCreate (Bundle savedInstanceState){
 
         String name=user.getText().toString();
         int selectedId=rg.getCheckedRadioButtonId();
+        RadioButton radioSexButton = (RadioButton) findViewById(selectedId);
+
+        if (radioSexButton.getText().equals("Male")){
+            selectedId = 1;
+        }else {
+            selectedId = 0;
+        }
         Integer phon= Integer.valueOf(phn.getText().toString());
         Double salr= Double.valueOf(sal.getText().toString());
-        Integer selectcheckbox=t.getImeActionId();
+        boolean selectcheckbox=t.isChecked();
         dbHelper.insertRow(name,selectedId,phon,salr,selectcheckbox);
         Toast.makeText(this, "data is successfully entered", Toast.LENGTH_LONG).show();
         dbHelper.close();

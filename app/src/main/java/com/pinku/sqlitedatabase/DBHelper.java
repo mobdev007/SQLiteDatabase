@@ -33,7 +33,7 @@ public class DBHelper {
     public static final String DatabaseName = "db_value";
     public static final String DatabaseTable = "table_value";
 
-    public static final int Version = 6;
+    public static final int Version = 7;
 
     public static final String Database_Create_Sql = "create table " + DatabaseTable
             + "(" + Key_RowId + " integer primary key autoincrement," + KEY_NAME
@@ -55,7 +55,7 @@ public class DBHelper {
         return this;
     }
 
-    public long insertRow(String name,int gender,int phone,Double salary,int language){
+    public long insertRow(String name,int gender,int phone,Double salary,boolean language){
         ContentValues contentValues = new ContentValues();
         contentValues.put(KEY_NAME,name);
         contentValues.put(KEY_GENDER,gender);
